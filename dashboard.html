@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Police station dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .navbar {
+        background-color: rgb(255, 187, 110);
+        margin-bottom: 50px;
+        border-radius: 0;
+    }
+    .navbar-nav li a {
+        margin-top: 2.5px;
+        color:white; 
+        background-color:rgb(40, 40, 39);
+    }
+    .jumbotron {
+      margin-bottom: 0;
+      padding: 25px;
+      border: 1px;
+    }
+    footer {
+      background-color: rgb(255, 187, 110);
+      padding: 25px;
+      border: 1px;
+    }
+    h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .cover {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between; /* Align containers side by side */
+    }
+    .box {
+      flex: 1; /* Each container takes equal space */
+      margin: 10px;
+      padding: 20px;
+      
+      background-color: rgb(96, 101, 118);
+      color: white;
+    }
+    .service-box {
+      margin-top: 1px;
+      background-color:white;
+      color: rgb(69, 56, 253);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .service-box h1 {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .service-list {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    .service-list li {
+      margin-bottom: 10px;
+    }
+
+    .service-list li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s;
+      padding: 10px 20px;
+      background-color: rgb(255, 187, 110);
+      border-radius: 20px;
+      display: block;
+    }
+
+    .service-list li a:hover {
+      background-color: #ffc107;
+      color: #000;
+    }
+    
+    .image-container {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .image-container img {
+      width: 200px; /* Adjust image size as needed */
+      height: 200px; /* Adjust image size as needed */
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.1);
+    }
+
+    .image-description {
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-top: 10px;
+    }
+    
+  </style>
+</head>
+<body>  
+<div class="jumbotron">
+  <div class="container text-center">
+    <img width="70px" src="https://iconape.com/wp-content/files/zd/258533/png/indian-government-logo.png" alt="">
+    <h2>DIGITAL FRAUD REPORTING PORTAL</h2>    
+    <p><b>डिजिटल धोखाधड़ी रिपोर्टिंग पोर्टल</b></p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img width="100px" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/G20_India_2023_logo.svg" alt="">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Track</a></li>
+        <li><a href="#">Data</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>  
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="cover">
+  <div class="box">
+    <h2>Information</h2>
+    <p>Phishing: Fraudsters attempt to obtain sensitive information, such as passwords and credit card numbers, by masquerading as a trustworthy entity in electronic communication.
+      Identity Theft: Criminals steal personal information, such as Social Security numbers or bank account details, to impersonate individuals for fraudulent purposes.
+      Payment Card Fraud: Unauthorized use of payment cards (credit cards, debit cards) to make purchases or withdraw funds without the cardholder's consent.
+      Account Takeover: Hackers gain unauthorized access to user accounts, often through stolen credentials, to commit fraudulent activities.
+      Online Scams: Various schemes designed to deceive individuals into sending money or providing personal information under false pretenses, such as lottery scams, romance scams, and fake job offers.</p>
+  </div>
+
+  <div class="box">
+    <h2>Prevention and Mitigation</h2>
+    <p>Financial Loss: Victims of digital fraud can suffer significant financial losses, including unauthorized charges, drained bank accounts, and identity theft-related expenses.
+      Reputational Damage: Individuals and businesses affected by digital fraud may experience reputational damage, leading to loss of trust from customers, partners, and stakeholders.
+      Legal Consequences: Digital fraud can result in legal consequences for both perpetrators and victims, including lawsuits, regulatory fines, and criminal charges.
+      Psychological Impact: Victims of digital fraud may experience stress, anxiety, and emotional distress due to the violation of privacy and financial insecurity.</p>
+  </div>
+
+  <div class="box">
+    <h2>Global Trends</h2>
+    <p>Use Strong Authentication: Implement multi-factor authentication (MFA) to add an extra layer of security to online accounts.
+      Stay Informed: Educate yourself about common fraud schemes and techniques used by fraudsters to avoid falling victim to scams.
+      Secure Connections: Ensure secure internet connections (HTTPS) when submitting sensitive information online and avoid using public Wi-Fi for transactions.
+      Regular Monitoring: Monitor financial accounts and credit reports regularly for any suspicious activity or unauthorized transactions.
+      Report Incidents: Promptly report any suspected instances of digital fraud to relevant authorities, such as financial institutions, law enforcement agencies, and regulatory bodies.</p>
+  </div>
+</div>
+
+<div class="service-box">
+    <h1>Services</h1>
+    <ul class="service-list">
+      <li><a href="#">Fraud Detection</a></li>
+      <li><a href="#">Police Access</a></li>
+      <li><a href="#">Public Awareness</a></li>
+    </ul>
+</div>
+
+<div class="image-container">
+    <div>
+      <img src="https://images.news18.com/ibnlive/uploads/2023/04/payment-1-2-16824121353x2.png?impolicy=website&width=640&height=480" alt="Image 1">
+      <p class="image-description"><b>Entering Incorrect Payment Details</b></p>
+    </div>
+    <div>
+      <img src="https://www.dsci.in/digital-payment-abhiyan/assets/img-31.jpg" alt="Image 2">
+      <p class="image-description"><b>Ignoring Security Measures</b></p>
+    </div>
+    <div>
+      <img src="https://www.india.com/wp-content/uploads/2022/04/digital-payment-fraud.jpg" alt="Image 3">
+      <p class="image-description"><b>Overlooking Transaction Fees</b></p>
+    </div>
+    <div>
+      <img src="https://bfsi.eletsonline.com/wp-content/uploads/2017/10/Digital_India.jpg" alt="Image 4">
+      <p class="image-description"><b>Forgetting to Check Statements</b></p>
+    </div>
+  </div>
+  
+
+
+<footer class="container-fluid text-center">
+  <p>Digital Threats</p>  
+  <form class="form-inline">
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+  </form>
+</footer>
+
+</body>
+</html>
